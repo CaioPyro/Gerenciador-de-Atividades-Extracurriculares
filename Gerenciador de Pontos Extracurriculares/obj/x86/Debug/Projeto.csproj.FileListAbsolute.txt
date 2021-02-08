@@ -1,0 +1,7 @@
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\bin\Debug\Projeto.exe
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\bin\Debug\Projeto.pdb
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\obj\x86\Debug\Projeto.Menu_Coordenador.resources
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\obj\x86\Debug\Projeto.Properties.Resources.resources
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\obj\x86\Debug\Projeto.csproj.GenerateResource.Cache
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\obj\x86\Debug\Projeto.exe
+C:\Users\Caio Eduardo\AppData\Local\Temporary Projects\Projeto\obj\x86\Debug\Projeto.pdb
