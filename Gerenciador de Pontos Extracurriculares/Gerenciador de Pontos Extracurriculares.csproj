@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="Atividade.cs" />
     <Compile Include="Banco.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -84,6 +85,12 @@
     <Compile Include="F_login.Designer.cs">
       <DependentUpon>F_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_RegistrarAtividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_RegistrarAtividade.Designer.cs">
+      <DependentUpon>F_RegistrarAtividade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globais.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_login.resx">
       <DependentUpon>F_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_RegistrarAtividade.resx">
+      <DependentUpon>F_RegistrarAtividade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

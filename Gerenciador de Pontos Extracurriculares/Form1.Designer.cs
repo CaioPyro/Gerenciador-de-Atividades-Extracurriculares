@@ -65,6 +65,7 @@
             this.registrarAtividade.TabIndex = 1;
             this.registrarAtividade.Text = "Registrar Atividades";
             this.registrarAtividade.UseVisualStyleBackColor = false;
+            this.registrarAtividade.Click += new System.EventHandler(this.registrarAtividade_Click);
             // 
             // consultarAluno
             // 

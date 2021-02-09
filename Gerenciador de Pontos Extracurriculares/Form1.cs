@@ -39,5 +39,11 @@ namespace Projeto
             F_consultarAluno consultarAluno = new F_consultarAluno();
             consultarAluno.ShowDialog();
         }
+
+        private void registrarAtividade_Click(object sender, EventArgs e)
+        {
+            F_RegistrarAtividade registrarAtividade = new F_RegistrarAtividade();
+            registrarAtividade.ShowDialog();
+        }
     }
 }

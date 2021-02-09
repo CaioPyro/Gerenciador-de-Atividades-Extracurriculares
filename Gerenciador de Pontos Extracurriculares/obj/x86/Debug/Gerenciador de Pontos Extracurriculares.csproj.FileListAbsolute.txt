@@ -11,3 +11,4 @@ C:\Users\Caio Eduardo\Documents\Visual Studio 2010\Projects\Gerenciador de Ponto
 C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_login.resources
 C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\bin\Debug\EntityFramework.dll
 C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_consultarAluno.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_RegistrarAtividade.resources

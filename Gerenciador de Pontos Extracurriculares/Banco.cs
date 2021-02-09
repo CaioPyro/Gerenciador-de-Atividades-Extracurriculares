@@ -196,5 +196,57 @@ namespace Projeto
             vcon.Close();
             return res;
         }
+
+        //Funções da Atividade
+
+        public static bool existeMatriculaAtiv(Atividade A)
+        {
+            bool res;
+
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            var vcon = ConexaoBanco();
+            var cmd = vcon.CreateCommand();
+            cmd.CommandText = "SELECT n_matricula FROM tb_atividade WHERE n_matricula='" + A.n_matricula + "'";
+            da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                res = true;
+            }
+
+            else
+            {
+                res = false;
+            }
+            vcon.Close();
+            return res;
+        }        
+        
+        public static void NovaAtividade(Atividade A)
+        {
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "INSERT INTO tb_atividade (t_nomeAtividade, n_data, n_pontosObtidos, t_tipoAtividade, t_descricao, n_matricula) VALUES (@t_nomeAtividade, @n_data, @n_pontosObtidos, @t_tipoAtividade, @t_descricao, @n_matricula)";
+                cmd.Parameters.AddWithValue("@t_nomeAtividade", A.t_nomeAtividade);
+                cmd.Parameters.AddWithValue("@n_data", A.n_data);
+                cmd.Parameters.AddWithValue("@n_pontosObtidos", A.n_pontosObtidos);
+                cmd.Parameters.AddWithValue("@t_tipoAtividade", A.t_tipoAtividade);
+                cmd.Parameters.AddWithValue("@t_descricao", A.t_descricao);
+                cmd.Parameters.AddWithValue("@n_matricula", A.n_matricula);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Nova atividade registrada!");
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao registrar atividade!");
+            }
+
+        }
+
     }
 }
