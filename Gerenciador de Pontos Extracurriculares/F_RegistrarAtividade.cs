@@ -56,12 +56,21 @@ namespace Projeto
             Atividade atividade = new Atividade();
             atividade.n_matricula = int.Parse(tb_matricula.Text);
             atividade.t_nomeAtividade = tb_nomeAtividade.Text;
-            atividade.n_data = Convert.ToDateTime(tb_data.Text);
+            atividade.n_data = tb_data.Text;
             atividade.n_pontosObtidos = int.Parse(tb_pontos.Text);
             atividade.t_tipoAtividade = tb_tipoAtividade.Text;
             atividade.t_descricao = tb_descricao.Text;
 
             Banco.NovaAtividade(atividade);
+
+            string queryPontos = String.Format(@"
+                UPDATE
+                    tb_aluno
+                SET
+                    n_pontos = (n_pontos + '{0}')
+                WHERE
+                    n_matricula = {1}", tb_pontos.Text, tb_matricula.Text);
+            Banco.dml(queryPontos);
         }
     }
 }

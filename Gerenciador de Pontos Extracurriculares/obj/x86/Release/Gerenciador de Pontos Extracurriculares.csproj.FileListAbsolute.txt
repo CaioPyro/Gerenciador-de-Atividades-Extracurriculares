@@ -1,0 +1,9 @@
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.Menu_Coordenador.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_cadastroAluno.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_consultarAluno.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_ConsultarAtividades.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_EditarAtividade.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_login.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_RegistrarAtividade.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.Properties.Resources.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Gerenciador de Pontos Extracurriculares.csproj.GenerateResource.Cache

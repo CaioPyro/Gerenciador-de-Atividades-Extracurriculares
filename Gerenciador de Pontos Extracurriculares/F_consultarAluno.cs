@@ -61,6 +61,7 @@ namespace Projeto
             a.t_acesso = cbx_acesso.Text;
             a.n_pontos = Convert.ToInt32(tb_pontos.Text);
             Banco.atualizarAluno(a);
+            MessageBox.Show("Alterações Salvas");
             dgv_aluno.DataSource = Banco.ObterAlunosMatricula();
             dgv_aluno.CurrentCell = dgv_aluno[0, linha];
         }
@@ -71,6 +72,7 @@ namespace Projeto
             if (res == DialogResult.Yes)
             {
                 Banco.excluirAluno(tb_matricula.Text);
+                MessageBox.Show("Exclusão Concluída!");
                 dgv_aluno.DataSource = Banco.ObterAlunosMatricula();
             }
         }
@@ -78,6 +80,11 @@ namespace Projeto
         private void btn_fechar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dgv_aluno_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

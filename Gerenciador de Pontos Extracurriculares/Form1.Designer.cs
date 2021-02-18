@@ -48,6 +48,7 @@
             this.cadastroAluno.Name = "cadastroAluno";
             this.cadastroAluno.Size = new System.Drawing.Size(116, 36);
             this.cadastroAluno.TabIndex = 0;
+            this.cadastroAluno.TabStop = false;
             this.cadastroAluno.Text = "Cadastrar Aluno";
             this.cadastroAluno.UseVisualStyleBackColor = false;
             this.cadastroAluno.Click += new System.EventHandler(this.cadastrarAlunoToolStripMenuItem_Click);
@@ -62,7 +63,8 @@
             this.registrarAtividade.Location = new System.Drawing.Point(20, 85);
             this.registrarAtividade.Name = "registrarAtividade";
             this.registrarAtividade.Size = new System.Drawing.Size(116, 36);
-            this.registrarAtividade.TabIndex = 1;
+            this.registrarAtividade.TabIndex = 0;
+            this.registrarAtividade.TabStop = false;
             this.registrarAtividade.Text = "Registrar Atividades";
             this.registrarAtividade.UseVisualStyleBackColor = false;
             this.registrarAtividade.Click += new System.EventHandler(this.registrarAtividade_Click);
@@ -77,7 +79,8 @@
             this.consultarAluno.Location = new System.Drawing.Point(20, 149);
             this.consultarAluno.Name = "consultarAluno";
             this.consultarAluno.Size = new System.Drawing.Size(116, 36);
-            this.consultarAluno.TabIndex = 2;
+            this.consultarAluno.TabIndex = 0;
+            this.consultarAluno.TabStop = false;
             this.consultarAluno.Text = "Consultar Aluno";
             this.consultarAluno.UseVisualStyleBackColor = false;
             this.consultarAluno.Click += new System.EventHandler(this.consultarAluno_Click);
@@ -104,9 +107,11 @@
             this.btn_consultarAtividades.Location = new System.Drawing.Point(20, 218);
             this.btn_consultarAtividades.Name = "btn_consultarAtividades";
             this.btn_consultarAtividades.Size = new System.Drawing.Size(116, 36);
-            this.btn_consultarAtividades.TabIndex = 3;
+            this.btn_consultarAtividades.TabIndex = 0;
+            this.btn_consultarAtividades.TabStop = false;
             this.btn_consultarAtividades.Text = "Consultar Atividades";
             this.btn_consultarAtividades.UseVisualStyleBackColor = false;
+            this.btn_consultarAtividades.Click += new System.EventHandler(this.btn_consultarAtividades_Click);
             // 
             // Menu_Coordenador
             // 
@@ -115,7 +120,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(766, 473);
             this.Controls.Add(this.panel1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.SystemColors.Window;
             this.Name = "Menu_Coordenador";
             this.RightToLeftLayout = true;
@@ -123,7 +128,6 @@
             this.Text = "Gerenciador de Pontos Extracurriculares";
             this.TransparencyKey = System.Drawing.SystemColors.Window;
             this.Load += new System.EventHandler(this.Menu_Coordenador_Load);
-            this.Click += new System.EventHandler(this.cadastrarAlunoToolStripMenuItem_Click);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

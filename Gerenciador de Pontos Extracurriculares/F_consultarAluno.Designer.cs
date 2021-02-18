@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.cbx_acesso = new System.Windows.Forms.ComboBox();
             this.tb_curso = new System.Windows.Forms.TextBox();
@@ -40,11 +40,11 @@
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_fechar = new System.Windows.Forms.Button();
+            this.btn_excluir = new System.Windows.Forms.Button();
+            this.btn_novo = new System.Windows.Forms.Button();
             this.btn_salvar = new System.Windows.Forms.Button();
             this.dgv_aluno = new System.Windows.Forms.DataGridView();
-            this.btn_novo = new System.Windows.Forms.Button();
-            this.btn_excluir = new System.Windows.Forms.Button();
-            this.btn_fechar = new System.Windows.Forms.Button();
             this.tb_pontos = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -147,6 +147,39 @@
             this.panel1.Size = new System.Drawing.Size(630, 54);
             this.panel1.TabIndex = 21;
             // 
+            // btn_fechar
+            // 
+            this.btn_fechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_fechar.Location = new System.Drawing.Point(492, 14);
+            this.btn_fechar.Name = "btn_fechar";
+            this.btn_fechar.Size = new System.Drawing.Size(126, 28);
+            this.btn_fechar.TabIndex = 3;
+            this.btn_fechar.Text = "Fechar";
+            this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
+            // 
+            // btn_excluir
+            // 
+            this.btn_excluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_excluir.Location = new System.Drawing.Point(276, 14);
+            this.btn_excluir.Name = "btn_excluir";
+            this.btn_excluir.Size = new System.Drawing.Size(126, 28);
+            this.btn_excluir.TabIndex = 2;
+            this.btn_excluir.Text = "Excluir";
+            this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
+            // 
+            // btn_novo
+            // 
+            this.btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_novo.Location = new System.Drawing.Point(12, 14);
+            this.btn_novo.Name = "btn_novo";
+            this.btn_novo.Size = new System.Drawing.Size(126, 28);
+            this.btn_novo.TabIndex = 1;
+            this.btn_novo.Text = "Novo Aluno";
+            this.btn_novo.UseVisualStyleBackColor = true;
+            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
+            // 
             // btn_salvar
             // 
             this.btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -162,14 +195,14 @@
             // 
             this.dgv_aluno.AllowUserToAddRows = false;
             this.dgv_aluno.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_aluno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_aluno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_aluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_aluno.EnableHeadersVisualStyles = false;
             this.dgv_aluno.Location = new System.Drawing.Point(260, 82);
@@ -180,40 +213,8 @@
             this.dgv_aluno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_aluno.Size = new System.Drawing.Size(349, 221);
             this.dgv_aluno.TabIndex = 22;
+            this.dgv_aluno.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_aluno_CellContentClick);
             this.dgv_aluno.SelectionChanged += new System.EventHandler(this.dgv_aluno_SelectionChanged);
-            // 
-            // btn_novo
-            // 
-            this.btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_novo.Location = new System.Drawing.Point(12, 14);
-            this.btn_novo.Name = "btn_novo";
-            this.btn_novo.Size = new System.Drawing.Size(126, 28);
-            this.btn_novo.TabIndex = 1;
-            this.btn_novo.Text = "Novo Aluno";
-            this.btn_novo.UseVisualStyleBackColor = true;
-            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
-            // 
-            // btn_excluir
-            // 
-            this.btn_excluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_excluir.Location = new System.Drawing.Point(276, 14);
-            this.btn_excluir.Name = "btn_excluir";
-            this.btn_excluir.Size = new System.Drawing.Size(126, 28);
-            this.btn_excluir.TabIndex = 2;
-            this.btn_excluir.Text = "Excluir";
-            this.btn_excluir.UseVisualStyleBackColor = true;
-            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
-            // 
-            // btn_fechar
-            // 
-            this.btn_fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_fechar.Location = new System.Drawing.Point(492, 14);
-            this.btn_fechar.Name = "btn_fechar";
-            this.btn_fechar.Size = new System.Drawing.Size(126, 28);
-            this.btn_fechar.TabIndex = 3;
-            this.btn_fechar.Text = "Fechar";
-            this.btn_fechar.UseVisualStyleBackColor = true;
-            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
             // tb_pontos
             // 

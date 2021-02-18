@@ -70,7 +70,7 @@ namespace Projeto
             {
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "SELECT n_matricula AS 'Matrícula', t_nome AS 'Nome' FROM tb_aluno";
+                cmd.CommandText = "SELECT n_matricula AS 'Matrícula', t_nome AS 'Nome' FROM tb_aluno ORDER BY t_nome";
                 da = new SQLiteDataAdapter(cmd.CommandText, vcon);
                 da.Fill(dt);
                 vcon.Close();
@@ -246,6 +246,161 @@ namespace Projeto
                 MessageBox.Show("Erro ao registrar atividade!");
             }
 
+        }
+
+        public static DataTable consultaAtiv(Atividade a)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = @"select 
+                                        id_atividade AS 'ID da Atividade',
+                                        n_matricula AS 'Matrícula do Aluno',
+                                        t_nomeAtividade AS 'Nome da Atividade',
+                                        n_data AS 'Data',
+                                        n_pontosObtidos AS 'Pontos Obtidos',
+                                        t_tipoAtividade AS 'Tipo de Atividade',
+                                        t_descricao AS 'Descrição'
+                                    From
+                                        tb_atividade
+                                    WHERE
+                                        n_matricula = "+ a.n_matricula;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static DataTable consultaAtivID(Atividade a)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = @"select 
+                                        id_atividade AS 'ID da Atividade',
+                                        n_matricula AS 'Matrícula do Aluno',
+                                        t_nomeAtividade AS 'Nome da Atividade',
+                                        n_data AS 'Data',
+                                        n_pontosObtidos AS 'Pontos Obtidos',
+                                        t_tipoAtividade AS 'Tipo de Atividade',
+                                        t_descricao AS 'Descrição'
+                                    From
+                                        tb_atividade
+                                    WHERE
+                                        id_atividade = " + a.id_atividade;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void atualizarAtividade(Atividade A)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE tb_atividade SET id_atividade="+ A.id_atividade +" ,n_matricula=" + A.n_matricula + ", t_nomeAtividade='" + A.t_nomeAtividade + "', n_data=" + A.n_data + ", n_pontosObtidos="+ A.n_pontosObtidos +" , t_tipoAtividade='" + A.t_tipoAtividade + "', t_descricao='" + A.t_descricao + "' WHERE id_atividade=" + A.id_atividade;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }        
+
+        public static DataTable ObterDadosAtividades(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = @"
+                    SELECT * FROM tb_atividade
+                    WHERE
+                        n_matricula=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void excluirAtividade(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_atividade WHERE id_atividade=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void dml(string q, string msgOK=null,string msgERRO=null)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = q;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                if (msgOK != null)
+                {
+                    MessageBox.Show(msgOK);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (msgERRO != null)
+                {
+                    MessageBox.Show(msgERRO + "\n" + ex.Message);
+                }
+                throw ex;
+            }
         }
 
     }

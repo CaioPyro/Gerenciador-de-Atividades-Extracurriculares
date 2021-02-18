@@ -18,10 +18,7 @@ namespace Projeto
         {
             InitializeComponent();
             
-            if (A_coordenador.Checked)
-            {
-                menu_coordenador = f;
-            }
+            
         }
 
         private void F_login_Load(object sender, EventArgs e)

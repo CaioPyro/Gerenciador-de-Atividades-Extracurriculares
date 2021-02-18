@@ -45,5 +45,11 @@ namespace Projeto
             F_RegistrarAtividade registrarAtividade = new F_RegistrarAtividade();
             registrarAtividade.ShowDialog();
         }
+
+        private void btn_consultarAtividades_Click(object sender, EventArgs e)
+        {
+            F_ConsultarAtividades consultarAtividades = new F_ConsultarAtividades();
+            consultarAtividades.ShowDialog();
+        }
     }
 }

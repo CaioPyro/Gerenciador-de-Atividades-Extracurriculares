@@ -164,7 +164,7 @@
             // btn_fechar
             // 
             this.btn_fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_fechar.Location = new System.Drawing.Point(229, 5);
+            this.btn_fechar.Location = new System.Drawing.Point(226, 5);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(88, 28);
             this.btn_fechar.TabIndex = 7;
@@ -186,7 +186,7 @@
             // btn_salvar
             // 
             this.btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_salvar.Location = new System.Drawing.Point(115, 5);
+            this.btn_salvar.Location = new System.Drawing.Point(119, 5);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(88, 28);
             this.btn_salvar.TabIndex = 4;
