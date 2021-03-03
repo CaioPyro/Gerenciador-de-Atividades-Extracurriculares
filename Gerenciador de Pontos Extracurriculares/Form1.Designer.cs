@@ -127,6 +127,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciador de Pontos Extracurriculares";
             this.TransparencyKey = System.Drawing.SystemColors.Window;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_Coordenador_FormClosed);
             this.Load += new System.EventHandler(this.Menu_Coordenador_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

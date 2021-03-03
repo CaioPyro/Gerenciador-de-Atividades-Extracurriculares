@@ -51,5 +51,10 @@ namespace Projeto
             F_ConsultarAtividades consultarAtividades = new F_ConsultarAtividades();
             consultarAtividades.ShowDialog();
         }
+
+        private void Menu_Coordenador_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

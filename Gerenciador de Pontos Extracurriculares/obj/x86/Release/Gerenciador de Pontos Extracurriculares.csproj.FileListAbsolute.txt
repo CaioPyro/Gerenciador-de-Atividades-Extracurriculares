@@ -7,3 +7,10 @@ C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Ponto
 C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_RegistrarAtividade.resources
 C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.Properties.Resources.resources
 C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Gerenciador de Pontos Extracurriculares.csproj.GenerateResource.Cache
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Projeto.F_MenuAluno.resources
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\bin\Release\Gerenciador de Pontos Extracurriculares.exe.config
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\bin\Release\Gerenciador de Pontos Extracurriculares.exe
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\bin\Release\Gerenciador de Pontos Extracurriculares.pdb
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\bin\Release\EntityFramework.dll
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Gerenciador de Pontos Extracurriculares.exe
+C:\Users\Caio Eduardo\documents\visual studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Release\Gerenciador de Pontos Extracurriculares.pdb

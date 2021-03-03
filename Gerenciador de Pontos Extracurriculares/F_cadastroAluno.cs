@@ -41,7 +41,6 @@ namespace Projeto
             aluno.t_acesso = cbx_acesso.Text;
 
             Banco.NovoAluno(aluno);
-            MessageBox.Show("Aluno Cadastrado");
 
         }
 

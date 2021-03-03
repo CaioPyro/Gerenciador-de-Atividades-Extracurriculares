@@ -13,12 +13,13 @@ namespace Projeto
     {
         Menu_Coordenador menu_coordenador;
         DataTable dt = new DataTable();
+
+        public string matricula, cpf, acesso;
         
         public F_login(Menu_Coordenador f)
         {
             InitializeComponent();
-            
-            
+            menu_coordenador = f;
         }
 
         private void F_login_Load(object sender, EventArgs e)
@@ -28,8 +29,8 @@ namespace Projeto
 
         private void btn_logar_Click(object sender, EventArgs e)
         {
-            string matricula = tb_matricula.Text;
-            string cpf = tb_cpf.Text;
+            matricula = tb_matricula.Text;
+            cpf = tb_cpf.Text;
 
             if (matricula == "" || cpf == "")
             {
@@ -41,9 +42,28 @@ namespace Projeto
             string sql = "SELECT * FROM tb_aluno WHERE n_matricula ='"+matricula+"' AND n_cpf ='"+cpf+"'";
             dt = Banco.consulta(sql);
 
+            acesso = dt.Rows[0].ItemArray[4].ToString();
+            matricula = dt.Rows[0].Field<Int64>("n_matricula").ToString();
+            cpf = dt.Rows[0].Field<Int64>("n_cpf").ToString();
+
             if (dt.Rows.Count == 1)
             {
+                
                 Globais.logado = true;
+
+                if (acesso == "Aluno")
+                {
+                    F_MenuAluno f_menuAluno = new F_MenuAluno(tb_matricula.Text);
+                    f_menuAluno.ShowDialog();
+                    this.Hide();
+                }
+                this.Close();
+
+                if (acesso == "Coordenador")
+                {
+                    menu_coordenador.ShowDialog(); 
+                }
+
                 this.Close();
             }
 
@@ -51,11 +71,19 @@ namespace Projeto
             {
                 MessageBox.Show("Usuário não encontrado!");
             }
+            this.Close();
+        
         }
+
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void F_login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

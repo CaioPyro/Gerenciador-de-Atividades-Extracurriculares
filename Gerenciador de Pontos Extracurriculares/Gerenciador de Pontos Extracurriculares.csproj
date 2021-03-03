@@ -85,6 +85,12 @@
     <Compile Include="F_ConsultarAtividades.Designer.cs">
       <DependentUpon>F_ConsultarAtividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_dadosAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_dadosAluno.Designer.cs">
+      <DependentUpon>F_dadosAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_EditarAtividade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="F_login.Designer.cs">
       <DependentUpon>F_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MenuAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MenuAluno.Designer.cs">
+      <DependentUpon>F_MenuAluno.cs</DependentUpon>
     </Compile>
     <Compile Include="F_RegistrarAtividade.cs">
       <SubType>Form</SubType>
@@ -118,11 +130,17 @@
     <EmbeddedResource Include="F_ConsultarAtividades.resx">
       <DependentUpon>F_ConsultarAtividades.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_dadosAluno.resx">
+      <DependentUpon>F_dadosAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_EditarAtividade.resx">
       <DependentUpon>F_EditarAtividade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_login.resx">
       <DependentUpon>F_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MenuAluno.resx">
+      <DependentUpon>F_MenuAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_RegistrarAtividade.resx">
       <DependentUpon>F_RegistrarAtividade.cs</DependentUpon>
