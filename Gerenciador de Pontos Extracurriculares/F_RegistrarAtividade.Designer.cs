@@ -152,19 +152,20 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Controls.Add(this.btn_fechar);
             this.panel1.Controls.Add(this.btn_novaAtividade);
             this.panel1.Controls.Add(this.btn_salvar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 390);
+            this.panel1.Location = new System.Drawing.Point(0, 395);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 45);
+            this.panel1.Size = new System.Drawing.Size(378, 52);
             this.panel1.TabIndex = 12;
             // 
             // btn_fechar
             // 
             this.btn_fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_fechar.Location = new System.Drawing.Point(226, 5);
+            this.btn_fechar.Location = new System.Drawing.Point(249, 12);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(88, 28);
             this.btn_fechar.TabIndex = 7;
@@ -175,7 +176,7 @@
             // btn_novaAtividade
             // 
             this.btn_novaAtividade.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_novaAtividade.Location = new System.Drawing.Point(12, 5);
+            this.btn_novaAtividade.Location = new System.Drawing.Point(35, 12);
             this.btn_novaAtividade.Name = "btn_novaAtividade";
             this.btn_novaAtividade.Size = new System.Drawing.Size(88, 28);
             this.btn_novaAtividade.TabIndex = 5;
@@ -186,7 +187,7 @@
             // btn_salvar
             // 
             this.btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_salvar.Location = new System.Drawing.Point(119, 5);
+            this.btn_salvar.Location = new System.Drawing.Point(142, 12);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(88, 28);
             this.btn_salvar.TabIndex = 4;
@@ -199,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(378, 435);
+            this.ClientSize = new System.Drawing.Size(378, 447);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tb_descricao);
             this.Controls.Add(this.label6);

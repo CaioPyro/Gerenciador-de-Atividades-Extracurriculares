@@ -226,6 +226,7 @@ namespace Projeto
         
         public static void NovaAtividade(Atividade A)
         {
+
             try
             {
                 var vcon = ConexaoBanco();

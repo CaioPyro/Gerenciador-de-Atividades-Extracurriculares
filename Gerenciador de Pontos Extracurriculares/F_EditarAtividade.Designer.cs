@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tb_nomeAtividade = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_data = new System.Windows.Forms.MaskedTextBox();
@@ -46,9 +46,6 @@
             this.tb_matricula = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv_atividade = new System.Windows.Forms.DataGridView();
-            this.btn_pesquisar = new System.Windows.Forms.Button();
-            this.tb_pesquisar = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -57,7 +54,7 @@
             // 
             // tb_nomeAtividade
             // 
-            this.tb_nomeAtividade.Location = new System.Drawing.Point(12, 169);
+            this.tb_nomeAtividade.Location = new System.Drawing.Point(12, 126);
             this.tb_nomeAtividade.Name = "tb_nomeAtividade";
             this.tb_nomeAtividade.Size = new System.Drawing.Size(349, 20);
             this.tb_nomeAtividade.TabIndex = 4;
@@ -65,7 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 152);
+            this.label1.Location = new System.Drawing.Point(9, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 25;
@@ -73,7 +70,7 @@
             // 
             // tb_data
             // 
-            this.tb_data.Location = new System.Drawing.Point(12, 221);
+            this.tb_data.Location = new System.Drawing.Point(12, 178);
             this.tb_data.Mask = "00/00/0000";
             this.tb_data.Name = "tb_data";
             this.tb_data.Size = new System.Drawing.Size(110, 20);
@@ -83,7 +80,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 205);
+            this.label3.Location = new System.Drawing.Point(13, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 27;
@@ -91,7 +88,7 @@
             // 
             // tb_pontosObtidos
             // 
-            this.tb_pontosObtidos.Location = new System.Drawing.Point(12, 281);
+            this.tb_pontosObtidos.Location = new System.Drawing.Point(12, 238);
             this.tb_pontosObtidos.Name = "tb_pontosObtidos";
             this.tb_pontosObtidos.Size = new System.Drawing.Size(110, 20);
             this.tb_pontosObtidos.TabIndex = 6;
@@ -99,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 264);
+            this.label2.Location = new System.Drawing.Point(9, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 29;
@@ -107,7 +104,7 @@
             // 
             // tb_tipoAtividade
             // 
-            this.tb_tipoAtividade.Location = new System.Drawing.Point(12, 341);
+            this.tb_tipoAtividade.Location = new System.Drawing.Point(12, 298);
             this.tb_tipoAtividade.Name = "tb_tipoAtividade";
             this.tb_tipoAtividade.Size = new System.Drawing.Size(349, 20);
             this.tb_tipoAtividade.TabIndex = 7;
@@ -115,7 +112,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 324);
+            this.label4.Location = new System.Drawing.Point(9, 281);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 13);
             this.label4.TabIndex = 31;
@@ -123,7 +120,7 @@
             // 
             // tb_descricao
             // 
-            this.tb_descricao.Location = new System.Drawing.Point(12, 398);
+            this.tb_descricao.Location = new System.Drawing.Point(12, 355);
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.Size = new System.Drawing.Size(349, 71);
@@ -132,7 +129,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 381);
+            this.label5.Location = new System.Drawing.Point(9, 338);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 33;
@@ -140,18 +137,19 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Controls.Add(this.btn_excluir);
             this.panel1.Controls.Add(this.btn_fechar);
             this.panel1.Controls.Add(this.btn_salvar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 475);
+            this.panel1.Location = new System.Drawing.Point(0, 448);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 50);
+            this.panel1.Size = new System.Drawing.Size(680, 54);
             this.panel1.TabIndex = 35;
             // 
             // btn_excluir
             // 
-            this.btn_excluir.Location = new System.Drawing.Point(162, 13);
+            this.btn_excluir.Location = new System.Drawing.Point(162, 15);
             this.btn_excluir.Name = "btn_excluir";
             this.btn_excluir.Size = new System.Drawing.Size(110, 25);
             this.btn_excluir.TabIndex = 5;
@@ -161,7 +159,7 @@
             // 
             // btn_fechar
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(563, 13);
+            this.btn_fechar.Location = new System.Drawing.Point(563, 15);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(96, 25);
             this.btn_fechar.TabIndex = 4;
@@ -171,7 +169,7 @@
             // 
             // btn_salvar
             // 
-            this.btn_salvar.Location = new System.Drawing.Point(12, 13);
+            this.btn_salvar.Location = new System.Drawing.Point(12, 15);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(110, 25);
             this.btn_salvar.TabIndex = 3;
@@ -181,7 +179,7 @@
             // 
             // tb_matricula
             // 
-            this.tb_matricula.Location = new System.Drawing.Point(12, 118);
+            this.tb_matricula.Location = new System.Drawing.Point(12, 75);
             this.tb_matricula.Name = "tb_matricula";
             this.tb_matricula.Size = new System.Drawing.Size(349, 20);
             this.tb_matricula.TabIndex = 3;
@@ -189,7 +187,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 101);
+            this.label6.Location = new System.Drawing.Point(9, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 13);
             this.label6.TabIndex = 36;
@@ -199,17 +197,17 @@
             // 
             this.dgv_atividade.AllowUserToAddRows = false;
             this.dgv_atividade.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_atividade.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_atividade.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_atividade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_atividade.EnableHeadersVisualStyles = false;
-            this.dgv_atividade.Location = new System.Drawing.Point(385, 104);
+            this.dgv_atividade.Location = new System.Drawing.Point(385, 149);
             this.dgv_atividade.MultiSelect = false;
             this.dgv_atividade.Name = "dgv_atividade";
             this.dgv_atividade.ReadOnly = true;
@@ -220,37 +218,12 @@
             this.dgv_atividade.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_atividade_CellContentClick);
             this.dgv_atividade.SelectionChanged += new System.EventHandler(this.dgv_atividade_SelectionChanged);
             // 
-            // btn_pesquisar
-            // 
-            this.btn_pesquisar.Location = new System.Drawing.Point(385, 24);
-            this.btn_pesquisar.Name = "btn_pesquisar";
-            this.btn_pesquisar.Size = new System.Drawing.Size(91, 23);
-            this.btn_pesquisar.TabIndex = 39;
-            this.btn_pesquisar.Text = "Pesquisar";
-            this.btn_pesquisar.UseVisualStyleBackColor = true;
-            this.btn_pesquisar.Click += new System.EventHandler(this.btn_pesquisar_Click);
-            // 
-            // tb_pesquisar
-            // 
-            this.tb_pesquisar.Location = new System.Drawing.Point(12, 26);
-            this.tb_pesquisar.Name = "tb_pesquisar";
-            this.tb_pesquisar.Size = new System.Drawing.Size(349, 20);
-            this.tb_pesquisar.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 13);
-            this.label7.TabIndex = 41;
-            this.label7.Text = "Digite o ID da Atividade";
-            // 
             // tb_id
             // 
             this.tb_id.Cursor = System.Windows.Forms.Cursors.No;
-            this.tb_id.Location = new System.Drawing.Point(12, 69);
+            this.tb_id.Location = new System.Drawing.Point(12, 26);
             this.tb_id.Name = "tb_id";
+            this.tb_id.ReadOnly = true;
             this.tb_id.Size = new System.Drawing.Size(349, 20);
             this.tb_id.TabIndex = 0;
             this.tb_id.TabStop = false;
@@ -258,7 +231,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 52);
+            this.label8.Location = new System.Drawing.Point(9, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 13);
             this.label8.TabIndex = 43;
@@ -269,12 +242,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(680, 525);
+            this.ClientSize = new System.Drawing.Size(680, 502);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.tb_pesquisar);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.btn_pesquisar);
             this.Controls.Add(this.dgv_atividade);
             this.Controls.Add(this.tb_matricula);
             this.Controls.Add(this.label6);
@@ -321,9 +291,6 @@
         private System.Windows.Forms.TextBox tb_matricula;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgv_atividade;
-        private System.Windows.Forms.Button btn_pesquisar;
-        private System.Windows.Forms.TextBox tb_pesquisar;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_excluir;

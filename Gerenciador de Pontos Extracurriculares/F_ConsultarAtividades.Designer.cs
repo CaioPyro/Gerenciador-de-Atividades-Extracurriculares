@@ -62,7 +62,7 @@
             // dgv_atividade
             // 
             this.dgv_atividade.AllowUserToAddRows = false;
-            this.dgv_atividade.AllowUserToOrderColumns = true;
+            this.dgv_atividade.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,6 +76,7 @@
             this.dgv_atividade.Location = new System.Drawing.Point(24, 84);
             this.dgv_atividade.MultiSelect = false;
             this.dgv_atividade.Name = "dgv_atividade";
+            this.dgv_atividade.ReadOnly = true;
             this.dgv_atividade.RowHeadersVisible = false;
             this.dgv_atividade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_atividade.Size = new System.Drawing.Size(575, 189);
@@ -90,13 +91,14 @@
             this.btn_pesquisar.Location = new System.Drawing.Point(364, 33);
             this.btn_pesquisar.Name = "btn_pesquisar";
             this.btn_pesquisar.Size = new System.Drawing.Size(75, 23);
-            this.btn_pesquisar.TabIndex = 24;
+            this.btn_pesquisar.TabIndex = 2;
             this.btn_pesquisar.Text = "Pesquisar";
             this.btn_pesquisar.UseVisualStyleBackColor = true;
             this.btn_pesquisar.Click += new System.EventHandler(this.btn_pesquisar_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Controls.Add(this.btn_fechar);
             this.panel1.Controls.Add(this.btn_editar);
             this.panel1.Controls.Add(this.btn_nova);
@@ -108,7 +110,7 @@
             // 
             // btn_fechar
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(503, 15);
+            this.btn_fechar.Location = new System.Drawing.Point(503, 14);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(96, 25);
             this.btn_fechar.TabIndex = 3;
@@ -118,7 +120,7 @@
             // 
             // btn_editar
             // 
-            this.btn_editar.Location = new System.Drawing.Point(124, 15);
+            this.btn_editar.Location = new System.Drawing.Point(124, 14);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(96, 25);
             this.btn_editar.TabIndex = 1;
@@ -128,7 +130,7 @@
             // 
             // btn_nova
             // 
-            this.btn_nova.Location = new System.Drawing.Point(12, 15);
+            this.btn_nova.Location = new System.Drawing.Point(12, 14);
             this.btn_nova.Name = "btn_nova";
             this.btn_nova.Size = new System.Drawing.Size(96, 25);
             this.btn_nova.TabIndex = 0;
@@ -138,11 +140,14 @@
             // 
             // tb_descricao
             // 
+            this.tb_descricao.Cursor = System.Windows.Forms.Cursors.No;
             this.tb_descricao.Location = new System.Drawing.Point(94, 307);
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.ReadOnly = true;
             this.tb_descricao.Size = new System.Drawing.Size(418, 70);
-            this.tb_descricao.TabIndex = 31;
+            this.tb_descricao.TabIndex = 0;
+            this.tb_descricao.TabStop = false;
             // 
             // label2
             // 

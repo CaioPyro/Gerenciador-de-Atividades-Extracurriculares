@@ -113,19 +113,20 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Controls.Add(this.btn_cancelar);
             this.panel1.Controls.Add(this.btn_salvar);
             this.panel1.Controls.Add(this.btn_novo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 291);
+            this.panel1.Location = new System.Drawing.Point(0, 280);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(544, 34);
+            this.panel1.Size = new System.Drawing.Size(544, 45);
             this.panel1.TabIndex = 8;
             // 
             // btn_cancelar
             // 
             this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cancelar.Location = new System.Drawing.Point(174, 3);
+            this.btn_cancelar.Location = new System.Drawing.Point(174, 10);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 2;
@@ -136,7 +137,7 @@
             // btn_salvar
             // 
             this.btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_salvar.Location = new System.Drawing.Point(93, 3);
+            this.btn_salvar.Location = new System.Drawing.Point(93, 10);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(75, 23);
             this.btn_salvar.TabIndex = 1;
@@ -147,7 +148,7 @@
             // btn_novo
             // 
             this.btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_novo.Location = new System.Drawing.Point(12, 3);
+            this.btn_novo.Location = new System.Drawing.Point(12, 10);
             this.btn_novo.Name = "btn_novo";
             this.btn_novo.Size = new System.Drawing.Size(75, 23);
             this.btn_novo.TabIndex = 0;

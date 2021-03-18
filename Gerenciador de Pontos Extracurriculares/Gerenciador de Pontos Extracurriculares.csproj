@@ -85,6 +85,12 @@
     <Compile Include="F_ConsultarAtividades.Designer.cs">
       <DependentUpon>F_ConsultarAtividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ConsultarAtividadesAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ConsultarAtividadesAluno.Designer.cs">
+      <DependentUpon>F_ConsultarAtividadesAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_dadosAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     <Compile Include="F_MenuAluno.Designer.cs">
       <DependentUpon>F_MenuAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Pontos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Pontos.Designer.cs">
+      <DependentUpon>F_Pontos.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_RegistrarAtividade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,9 @@
     <EmbeddedResource Include="F_ConsultarAtividades.resx">
       <DependentUpon>F_ConsultarAtividades.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_ConsultarAtividadesAluno.resx">
+      <DependentUpon>F_ConsultarAtividadesAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_dadosAluno.resx">
       <DependentUpon>F_dadosAluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_MenuAluno.resx">
       <DependentUpon>F_MenuAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Pontos.resx">
+      <DependentUpon>F_Pontos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_RegistrarAtividade.resx">
       <DependentUpon>F_RegistrarAtividade.cs</DependentUpon>

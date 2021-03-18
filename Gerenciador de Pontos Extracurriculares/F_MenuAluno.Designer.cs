@@ -60,6 +60,7 @@
             this.consultarPontos.TabStop = false;
             this.consultarPontos.Text = "Consultar Pontos";
             this.consultarPontos.UseVisualStyleBackColor = false;
+            this.consultarPontos.Click += new System.EventHandler(this.consultarPontos_Click);
             // 
             // btn_dadosPessoais
             // 
@@ -92,6 +93,7 @@
             this.consultarAtividade.TabStop = false;
             this.consultarAtividade.Text = "Consultar Atividades";
             this.consultarAtividade.UseVisualStyleBackColor = false;
+            this.consultarAtividade.Click += new System.EventHandler(this.consultarAtividade_Click);
             // 
             // F_MenuAluno
             // 
@@ -101,6 +103,7 @@
             this.ClientSize = new System.Drawing.Size(766, 473);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.Window;
+            this.MinimizeBox = false;
             this.Name = "F_MenuAluno";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

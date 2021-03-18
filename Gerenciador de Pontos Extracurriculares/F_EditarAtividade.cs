@@ -13,10 +13,14 @@ namespace Projeto
     {
         int valorAtual;
         
-        public F_EditarAtividade()
+        public string id_atividade;
+
+        public F_EditarAtividade(string id)
         {
             InitializeComponent();
             valorAtual = 0;
+
+            id_atividade = id;
         }
 
         private void btn_salvar_Click(object sender, EventArgs e)
@@ -77,20 +81,7 @@ namespace Projeto
         private void F_EditarAtividade_Load(object sender, EventArgs e)
         {
             Atividade A = new Atividade();
-            dgv_atividade.DataSource = Banco.consultaAtivID(A);
-            dgv_atividade.Columns[0].Width = 60;
-            dgv_atividade.Columns[1].Width = 60;
-            dgv_atividade.Columns[2].Width = 130;
-            dgv_atividade.Columns[3].Width = 75;
-            dgv_atividade.Columns[4].Width = 55;
-            dgv_atividade.Columns[5].Width = 95;
-            dgv_atividade.Columns[6].Width = 140;
-        }
-
-        private void btn_pesquisar_Click(object sender, EventArgs e)
-        {
-            Atividade A = new Atividade();
-            A.id_atividade = int.Parse(tb_pesquisar.Text);
+            A.id_atividade = int.Parse(id_atividade);
             dgv_atividade.DataSource = Banco.consultaAtivID(A);
             dgv_atividade.Columns[0].Width = 60;
             dgv_atividade.Columns[1].Width = 60;
@@ -103,6 +94,7 @@ namespace Projeto
 
         private void dgv_atividade_SelectionChanged(object sender, EventArgs e)
         {
+            
             
         }
 
@@ -142,7 +134,6 @@ namespace Projeto
                 
                 Atividade A = new Atividade();
                 dgv_atividade.DataSource = Banco.consultaAtivID(A);
-                tb_pesquisar.Clear();
                 tb_id.Clear();
                 tb_matricula.Clear();
                 tb_nomeAtividade.Clear();

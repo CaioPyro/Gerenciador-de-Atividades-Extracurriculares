@@ -39,6 +39,8 @@
             this.tb_cpf = new System.Windows.Forms.TextBox();
             this.tb_curso = new System.Windows.Forms.TextBox();
             this.tb_acesso = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -88,7 +90,7 @@
             // 
             // btn_fechar
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(326, 285);
+            this.btn_fechar.Location = new System.Drawing.Point(323, 10);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(94, 23);
             this.btn_fechar.TabIndex = 31;
@@ -146,18 +148,28 @@
             this.tb_acesso.TabIndex = 0;
             this.tb_acesso.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.btn_fechar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 292);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(449, 43);
+            this.panel1.TabIndex = 36;
+            // 
             // F_dadosAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(449, 320);
+            this.ClientSize = new System.Drawing.Size(449, 335);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tb_acesso);
             this.Controls.Add(this.tb_curso);
             this.Controls.Add(this.tb_cpf);
             this.Controls.Add(this.tb_matricula);
             this.Controls.Add(this.tb_nome);
-            this.Controls.Add(this.btn_fechar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -170,6 +182,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_dadosAluno";
             this.Load += new System.EventHandler(this.F_dadosAluno_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +201,6 @@
         private System.Windows.Forms.TextBox tb_cpf;
         private System.Windows.Forms.TextBox tb_curso;
         private System.Windows.Forms.TextBox tb_acesso;
+        private System.Windows.Forms.Panel panel1;
     }
 }

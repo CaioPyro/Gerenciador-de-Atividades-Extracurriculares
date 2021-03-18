@@ -54,7 +54,7 @@ namespace Projeto
 
         private void Menu_Coordenador_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            Application.Restart();
         }
     }
 }

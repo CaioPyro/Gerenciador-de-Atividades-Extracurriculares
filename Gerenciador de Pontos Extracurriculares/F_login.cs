@@ -42,13 +42,11 @@ namespace Projeto
             string sql = "SELECT * FROM tb_aluno WHERE n_matricula ='"+matricula+"' AND n_cpf ='"+cpf+"'";
             dt = Banco.consulta(sql);
 
-            acesso = dt.Rows[0].ItemArray[4].ToString();
-            matricula = dt.Rows[0].Field<Int64>("n_matricula").ToString();
-            cpf = dt.Rows[0].Field<Int64>("n_cpf").ToString();
-
             if (dt.Rows.Count == 1)
             {
-                
+                matricula = dt.Rows[0].Field<Int64>("n_matricula").ToString();
+                cpf = dt.Rows[0].Field<Int64>("n_cpf").ToString();
+                acesso = dt.Rows[0].ItemArray[4].ToString();
                 Globais.logado = true;
 
                 if (acesso == "Aluno")
@@ -71,7 +69,6 @@ namespace Projeto
             {
                 MessageBox.Show("Usuário não encontrado!");
             }
-            this.Close();
         
         }
 

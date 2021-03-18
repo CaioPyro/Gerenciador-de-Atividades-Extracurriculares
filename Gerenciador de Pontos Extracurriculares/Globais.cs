@@ -11,7 +11,7 @@ namespace Projeto
         public static Boolean logado = false;
         public static int tipoAcesso = 0;
 
-        public static string caminho = System.Environment.CurrentDirectory;
+        public static string caminho = System.AppDomain.CurrentDomain.BaseDirectory.ToString();
         public static string nomeBanco = "banco_sistema.db";
         public static string caminhoBanco = caminho+@"\Banco\";
 

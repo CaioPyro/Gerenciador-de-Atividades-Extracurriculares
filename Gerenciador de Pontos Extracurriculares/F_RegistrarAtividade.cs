@@ -54,14 +54,25 @@ namespace Projeto
         private void btn_salvar_Click(object sender, EventArgs e)
         {
             Atividade atividade = new Atividade();
-            atividade.n_matricula = int.Parse(tb_matricula.Text);
-            atividade.t_nomeAtividade = tb_nomeAtividade.Text;
-            atividade.n_data = tb_data.Text;
-            atividade.n_pontosObtidos = int.Parse(tb_pontos.Text);
-            atividade.t_tipoAtividade = tb_tipoAtividade.Text;
-            atividade.t_descricao = tb_descricao.Text;
+            
 
-            Banco.NovaAtividade(atividade);
+            if ((tb_matricula.Text == "") && (tb_nomeAtividade.Text == ""))
+            {
+                MessageBox.Show("Os Campos Não Foram Preenchidos!");
+                return;
+            }
+
+            else
+            {
+                atividade.n_matricula = int.Parse(tb_matricula.Text);
+                atividade.t_nomeAtividade = tb_nomeAtividade.Text;
+                atividade.n_data = tb_data.Text;
+                atividade.n_pontosObtidos = int.Parse(tb_pontos.Text);
+                atividade.t_tipoAtividade = tb_tipoAtividade.Text;
+                atividade.t_descricao = tb_descricao.Text;
+
+                Banco.NovaAtividade(atividade);
+            }
 
             string queryPontos = String.Format(@"
                 UPDATE

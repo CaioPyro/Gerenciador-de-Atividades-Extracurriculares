@@ -9,10 +9,14 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Windows;
 using System.Data.SqlClient;
+using MessageBox = System.Windows.Forms.MessageBox;
+
 namespace Projeto
 {
     public partial class F_ConsultarAtividades : Form
-    {   
+    {
+        public string id_atividade;
+        
         public F_ConsultarAtividades()
         {
             InitializeComponent();
@@ -24,6 +28,8 @@ namespace Projeto
             {
                 DataGridViewRow row = this.dgv_atividade.Rows[e.RowIndex];
                 tb_descricao.Text = row.Cells[6].Value.ToString();
+
+                id_atividade = row.Cells[0].Value.ToString();
             }
         }
 
@@ -67,8 +73,16 @@ namespace Projeto
 
         private void btn_editar_Click(object sender, EventArgs e)
         {
-            F_EditarAtividade editarAtividade = new F_EditarAtividade();
-            editarAtividade.ShowDialog();
+            if (id_atividade == null)
+            {
+                MessageBox.Show("Nenhuma atividade foi selecionada!");
+            }
+
+            else
+            {
+                F_EditarAtividade editarAtividade = new F_EditarAtividade(id_atividade);
+                editarAtividade.ShowDialog();
+            }
         }
 
         private void btn_fechar_Click(object sender, EventArgs e)
