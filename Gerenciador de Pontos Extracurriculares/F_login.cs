@@ -72,12 +72,6 @@ namespace Projeto
         
         }
 
-
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void F_login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
