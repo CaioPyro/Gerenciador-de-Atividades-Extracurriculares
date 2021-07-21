@@ -56,9 +56,9 @@ namespace Projeto
             Atividade atividade = new Atividade();
             
 
-            if ((tb_matricula.Text == "") && (tb_nomeAtividade.Text == ""))
+            if (tb_matricula.Text == "" || tb_nomeAtividade.Text == "" || tb_data.Text == "" || tb_pontos.Text == "" || tb_tipoAtividade.Text == "")
             {
-                MessageBox.Show("Os Campos Não Foram Preenchidos!");
+                MessageBox.Show("Alguns campos não foram preenchidos!");
                 return;
             }
 

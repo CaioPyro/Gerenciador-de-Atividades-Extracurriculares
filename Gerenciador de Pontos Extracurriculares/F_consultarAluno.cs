@@ -19,8 +19,8 @@ namespace Projeto
         private void F_consultarAluno_Load(object sender, EventArgs e)
         {
             dgv_aluno.DataSource = Banco.ObterAlunosMatricula();
-            dgv_aluno.Columns[0].Width = 90;
-            dgv_aluno.Columns[1].Width = 240;
+            dgv_aluno.Columns[0].Width = 115;
+            dgv_aluno.Columns[1].Width = 290;
         }
 
         private void dgv_aluno_SelectionChanged(object sender, EventArgs e)
@@ -72,6 +72,7 @@ namespace Projeto
             if (res == DialogResult.Yes)
             {
                 Banco.excluirAluno(tb_matricula.Text);
+                Banco.excluirAtividadeAluno(tb_matricula.Text);
                 MessageBox.Show("Exclusão Concluída!");
                 dgv_aluno.DataSource = Banco.ObterAlunosMatricula();
             }

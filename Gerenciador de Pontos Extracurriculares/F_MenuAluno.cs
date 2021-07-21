@@ -22,7 +22,7 @@ namespace Projeto
 
         private void F_MenuAluno_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Restart();
+            this.Close();
         }
 
         private void btn_dadosPessoais_Click(object sender, EventArgs e)
@@ -41,6 +41,11 @@ namespace Projeto
         {
             F_Pontos f_pontos = new F_Pontos(matricula);
             f_pontos.ShowDialog();
+        }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }

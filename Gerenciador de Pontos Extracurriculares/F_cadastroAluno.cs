@@ -33,14 +33,22 @@ namespace Projeto
 
         private void btn_salvar_Click(object sender, EventArgs e)
         {
-            Aluno aluno = new Aluno();
-            aluno.t_nome = tb_nome.Text;
-            aluno.n_matricula = int.Parse(tb_matricula.Text);
-            aluno.n_cpf = int.Parse(tb_cpf.Text);
-            aluno.t_curso = tb_curso.Text;
-            aluno.t_acesso = cbx_acesso.Text;
+            if (tb_nome.Text == "" || tb_matricula.Text == "" || tb_cpf.Text == "" || tb_curso.Text == "")
+            {
+                MessageBox.Show("Preencha os campos vazios!");
+            }
 
-            Banco.NovoAluno(aluno);
+            else
+            {
+                Aluno aluno = new Aluno();
+                aluno.t_nome = tb_nome.Text;
+                aluno.n_matricula = int.Parse(tb_matricula.Text);
+                aluno.n_cpf = int.Parse(tb_cpf.Text);
+                aluno.t_curso = tb_curso.Text;
+                aluno.t_acesso = cbx_acesso.Text;
+
+                Banco.NovoAluno(aluno);
+            }
 
         }
 

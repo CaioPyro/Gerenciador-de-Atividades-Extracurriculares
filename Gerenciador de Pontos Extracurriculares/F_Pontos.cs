@@ -36,8 +36,8 @@ namespace Projeto
 
             dgv_atividade.DataSource = Banco.consulta(queryConsultarPontos);
             dgv_atividade.Columns[0].Width = 190;
-            dgv_atividade.Columns[1].Width = 105;
-            dgv_atividade.Columns[2].Width = 105;
+            dgv_atividade.Columns[1].Width = 112;
+            dgv_atividade.Columns[2].Width = 112;
 
             tb_pontos.Text = Banco.consulta(queryConsultarPontosTotais).Rows[0].Field<Int64>("n_pontos").ToString();
         }
@@ -45,6 +45,26 @@ namespace Projeto
         private void btn_fechar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dgv_atividade_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tb_pontos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

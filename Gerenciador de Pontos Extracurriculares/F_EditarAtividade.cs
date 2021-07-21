@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Data.SQLite;
 using System.Windows.Forms;
 
 namespace Projeto
@@ -37,7 +38,7 @@ namespace Projeto
                     t_tipoAtividade= '{5}',
                     t_descricao= '{6}'
                 WHERE
-                    id_atividade= '{7}'", tb_id.Text, tb_matricula.Text, tb_nomeAtividade.Text, (tb_data.Text), tb_pontosObtidos.Text, tb_tipoAtividade.Text, tb_descricao.Text, tb_id.Text);
+                    id_atividade= '{7}'", tb_id.Text, tb_matricula.Text, tb_nomeAtividade.Text, tb_data.Text, tb_pontosObtidos.Text, tb_tipoAtividade.Text, tb_descricao.Text, tb_id.Text);
             Banco.dml(queryAtualizarAtividade);
 
             if (valorAtual > int.Parse(tb_pontosObtidos.Text))
@@ -69,8 +70,6 @@ namespace Projeto
             }
 
             MessageBox.Show("Alterações Salvas");
-            Atividade a = new Atividade();
-            dgv_atividade.DataSource = Banco.consultaAtivID(a);
         }
 
         private void btn_fechar_Click(object sender, EventArgs e)
@@ -80,39 +79,16 @@ namespace Projeto
 
         private void F_EditarAtividade_Load(object sender, EventArgs e)
         {
-            Atividade A = new Atividade();
-            A.id_atividade = int.Parse(id_atividade);
-            dgv_atividade.DataSource = Banco.consultaAtivID(A);
-            dgv_atividade.Columns[0].Width = 60;
-            dgv_atividade.Columns[1].Width = 60;
-            dgv_atividade.Columns[2].Width = 130;
-            dgv_atividade.Columns[3].Width = 75;
-            dgv_atividade.Columns[4].Width = 55;
-            dgv_atividade.Columns[5].Width = 95;
-            dgv_atividade.Columns[6].Width = 140;
-        }
-
-        private void dgv_atividade_SelectionChanged(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void dgv_atividade_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dgv_atividade.Rows[e.RowIndex];
-
-                tb_id.Text = row.Cells[0].Value.ToString();
-                tb_matricula.Text = row.Cells[1].Value.ToString();
-                tb_nomeAtividade.Text = row.Cells[2].Value.ToString();
-                tb_data.Text = row.Cells[3].Value.ToString();
-                tb_pontosObtidos.Text = row.Cells[4].Value.ToString();
-                tb_tipoAtividade.Text = row.Cells[5].Value.ToString();
-                tb_descricao.Text = row.Cells[6].Value.ToString();
-                valorAtual = int.Parse(tb_pontosObtidos.Text);
-            }
+            Atividade id = new Atividade();
+            id.id_atividade = int.Parse(id_atividade);
+            tb_id.Text = Banco.consultaAtivID(id).Rows[0].Field<Int64>("ID da Atividade").ToString();
+            tb_matricula.Text = Banco.consultaAtivID(id).Rows[0].Field<Int64>("Matrícula do Aluno").ToString();
+            tb_nomeAtividade.Text = Banco.consultaAtivID(id).Rows[0].Field<string>("Nome da Atividade").ToString();
+            tb_data.Text = Banco.consultaAtivID(id).Rows[0].Field<string>("Data").ToString();
+            tb_pontosObtidos.Text = Banco.consultaAtivID(id).Rows[0].Field<Int64>("Pontos Obtidos").ToString();
+            tb_tipoAtividade.Text = Banco.consultaAtivID(id).Rows[0].Field<string>("Tipo de Atividade").ToString();
+            tb_descricao.Text = Banco.consultaAtivID(id).Rows[0].Field<string>("Descrição").ToString();
+            valorAtual = int.Parse(tb_pontosObtidos.Text);
         }
 
         private void btn_excluir_Click(object sender, EventArgs e)
@@ -132,8 +108,6 @@ namespace Projeto
                     n_matricula = {1}", tb_pontosObtidos.Text, tb_matricula.Text);
                 Banco.dml(queryPontos);
                 
-                Atividade A = new Atividade();
-                dgv_atividade.DataSource = Banco.consultaAtivID(A);
                 tb_id.Clear();
                 tb_matricula.Clear();
                 tb_nomeAtividade.Clear();

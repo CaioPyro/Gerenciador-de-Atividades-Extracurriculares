@@ -45,6 +45,11 @@ namespace Projeto
             dgv_atividade.Columns[4].Width = 55;
             dgv_atividade.Columns[5].Width = 95;
             dgv_atividade.Columns[6].Width = 140;
+
+            if (dgv_atividade.Rows.Count == 0)
+            {
+                MessageBox.Show("Nenhuma atividade foi encontrada");
+            }
         }
 
         private void F_ConsultarAtividades_Load(object sender, EventArgs e)

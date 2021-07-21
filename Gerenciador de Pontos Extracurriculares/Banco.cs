@@ -155,7 +155,7 @@ namespace Projeto
             {
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "INSERT INTO tb_aluno (t_nome, n_matricula, n_cpf, t_curso, t_acesso, n_pontos) VALUES (@t_nome, @n_matricula, @n_cpf, @t_curso, @t_acesso, 0)";
+                cmd.CommandText = "INSERT INTO tb_aluno (t_nome, n_matricula, n_cpf, t_curso, t_acesso, n_pontos) VALUES (@t_nome, @n_matricula, @n_cpf, @t_curso, @t_acesso,0)";
                 cmd.Parameters.AddWithValue("@t_nome", a.t_nome);
                 cmd.Parameters.AddWithValue("@n_matricula", a.n_matricula);
                 cmd.Parameters.AddWithValue("@n_cpf", a.n_cpf);
@@ -165,7 +165,7 @@ namespace Projeto
                 MessageBox.Show("Novo aluno inserido!");
                 vcon.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Erro ao inserir novo aluno!");
             }
@@ -242,7 +242,7 @@ namespace Projeto
                 MessageBox.Show("Nova atividade registrada!");
                 vcon.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Erro ao registrar atividade!");
             }
@@ -289,7 +289,7 @@ namespace Projeto
             {
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = @"select 
+                cmd.CommandText = @"SELECT 
                                         id_atividade AS 'ID da Atividade',
                                         n_matricula AS 'Matrícula do Aluno',
                                         t_nomeAtividade AS 'Nome da Atividade',
@@ -297,7 +297,7 @@ namespace Projeto
                                         n_pontosObtidos AS 'Pontos Obtidos',
                                         t_tipoAtividade AS 'Tipo de Atividade',
                                         t_descricao AS 'Descrição'
-                                    From
+                                    FROM
                                         tb_atividade
                                     WHERE
                                         id_atividade = " + a.id_atividade;
@@ -366,6 +366,26 @@ namespace Projeto
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
                 cmd.CommandText = "DELETE FROM tb_atividade WHERE id_atividade=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void excluirAtividadeAluno(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_atividade WHERE n_matricula=" + id;
                 da = new SQLiteDataAdapter(cmd.CommandText, vcon);
                 cmd.ExecuteNonQuery();
                 vcon.Close();

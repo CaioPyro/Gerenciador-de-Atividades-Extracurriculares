@@ -54,6 +54,11 @@ namespace Projeto
 
         private void Menu_Coordenador_FormClosed(object sender, FormClosedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
             Application.Restart();
         }
     }
