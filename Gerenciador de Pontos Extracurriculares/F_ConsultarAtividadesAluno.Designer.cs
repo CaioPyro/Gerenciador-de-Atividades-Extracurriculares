@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tb_descricao = new System.Windows.Forms.TextBox();
             this.btn_fechar = new System.Windows.Forms.Button();
+            this.btn_certificado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_atividade)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,14 +101,32 @@
             this.btn_fechar.UseVisualStyleBackColor = false;
             this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
+            // btn_certificado
+            // 
+            this.btn_certificado.BackColor = System.Drawing.Color.DarkRed;
+            this.btn_certificado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_certificado.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.btn_certificado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btn_certificado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.btn_certificado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_certificado.ForeColor = System.Drawing.Color.White;
+            this.btn_certificado.Location = new System.Drawing.Point(55, 498);
+            this.btn_certificado.Name = "btn_certificado";
+            this.btn_certificado.Size = new System.Drawing.Size(106, 29);
+            this.btn_certificado.TabIndex = 36;
+            this.btn_certificado.Text = "Abrir Certificado";
+            this.btn_certificado.UseVisualStyleBackColor = false;
+            this.btn_certificado.Click += new System.EventHandler(this.btn_certificado_Click);
+            // 
             // F_ConsultarAtividadesAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Projeto.Properties.Resources.atividades_realizadas;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1139, 598);
+            this.Controls.Add(this.btn_certificado);
             this.Controls.Add(this.btn_fechar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_descricao);
@@ -132,5 +151,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_descricao;
         private System.Windows.Forms.Button btn_fechar;
+        private System.Windows.Forms.Button btn_certificado;
     }
 }

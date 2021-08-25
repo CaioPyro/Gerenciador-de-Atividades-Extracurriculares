@@ -44,6 +44,9 @@
             this.btn_fechar = new System.Windows.Forms.Button();
             this.btn_novaAtividade = new System.Windows.Forms.Button();
             this.btn_salvar = new System.Windows.Forms.Button();
+            this.tbx_buscaCertificado = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_buscarCertificado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +72,7 @@
             this.tb_nomeAtividade.Location = new System.Drawing.Point(220, 252);
             this.tb_nomeAtividade.Name = "tb_nomeAtividade";
             this.tb_nomeAtividade.Size = new System.Drawing.Size(347, 20);
-            this.tb_nomeAtividade.TabIndex = 3;
+            this.tb_nomeAtividade.TabIndex = 2;
             // 
             // label2
             // 
@@ -79,7 +82,7 @@
             this.label2.Location = new System.Drawing.Point(92, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 15);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nome da Atividade";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -91,7 +94,7 @@
             this.label3.Location = new System.Drawing.Point(169, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 15);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Data";
             // 
             // tb_data
@@ -100,7 +103,7 @@
             this.tb_data.Mask = "00/00/0000";
             this.tb_data.Name = "tb_data";
             this.tb_data.Size = new System.Drawing.Size(132, 20);
-            this.tb_data.TabIndex = 5;
+            this.tb_data.TabIndex = 3;
             this.tb_data.ValidatingType = typeof(System.DateTime);
             // 
             // tb_pontos
@@ -108,7 +111,7 @@
             this.tb_pontos.Location = new System.Drawing.Point(219, 353);
             this.tb_pontos.Name = "tb_pontos";
             this.tb_pontos.Size = new System.Drawing.Size(348, 20);
-            this.tb_pontos.TabIndex = 7;
+            this.tb_pontos.TabIndex = 4;
             this.tb_pontos.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
@@ -119,7 +122,7 @@
             this.label4.Location = new System.Drawing.Point(112, 354);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 15);
-            this.label4.TabIndex = 6;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Pontos Obtidos";
             // 
             // tb_tipoAtividade
@@ -127,7 +130,7 @@
             this.tb_tipoAtividade.Location = new System.Drawing.Point(764, 196);
             this.tb_tipoAtividade.Name = "tb_tipoAtividade";
             this.tb_tipoAtividade.Size = new System.Drawing.Size(348, 20);
-            this.tb_tipoAtividade.TabIndex = 9;
+            this.tb_tipoAtividade.TabIndex = 5;
             this.tb_tipoAtividade.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // label5
@@ -138,7 +141,7 @@
             this.label5.Location = new System.Drawing.Point(647, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 15);
-            this.label5.TabIndex = 8;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Tipo de Atividade";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
@@ -148,7 +151,7 @@
             this.tb_descricao.Multiline = true;
             this.tb_descricao.Name = "tb_descricao";
             this.tb_descricao.Size = new System.Drawing.Size(348, 78);
-            this.tb_descricao.TabIndex = 11;
+            this.tb_descricao.TabIndex = 6;
             // 
             // label6
             // 
@@ -158,7 +161,7 @@
             this.label6.Location = new System.Drawing.Point(685, 278);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 15);
-            this.label6.TabIndex = 10;
+            this.label6.TabIndex = 0;
             this.label6.Text = "Descrição";
             // 
             // btn_fechar
@@ -173,7 +176,7 @@
             this.btn_fechar.Location = new System.Drawing.Point(999, 448);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(113, 31);
-            this.btn_fechar.TabIndex = 7;
+            this.btn_fechar.TabIndex = 10;
             this.btn_fechar.Text = "Fechar";
             this.btn_fechar.UseVisualStyleBackColor = false;
             this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
@@ -190,7 +193,7 @@
             this.btn_novaAtividade.Location = new System.Drawing.Point(219, 448);
             this.btn_novaAtividade.Name = "btn_novaAtividade";
             this.btn_novaAtividade.Size = new System.Drawing.Size(113, 31);
-            this.btn_novaAtividade.TabIndex = 5;
+            this.btn_novaAtividade.TabIndex = 8;
             this.btn_novaAtividade.Text = "Nova Atividade";
             this.btn_novaAtividade.UseVisualStyleBackColor = false;
             this.btn_novaAtividade.Click += new System.EventHandler(this.btn_novaAtividade_Click);
@@ -207,19 +210,51 @@
             this.btn_salvar.Location = new System.Drawing.Point(370, 448);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(113, 31);
-            this.btn_salvar.TabIndex = 4;
+            this.btn_salvar.TabIndex = 9;
             this.btn_salvar.Text = "Salvar ";
             this.btn_salvar.UseVisualStyleBackColor = false;
             this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
+            // 
+            // tbx_buscaCertificado
+            // 
+            this.tbx_buscaCertificado.Location = new System.Drawing.Point(764, 354);
+            this.tbx_buscaCertificado.Name = "tbx_buscaCertificado";
+            this.tbx_buscaCertificado.Size = new System.Drawing.Size(348, 20);
+            this.tbx_buscaCertificado.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(682, 355);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Certificado";
+            // 
+            // btn_buscarCertificado
+            // 
+            this.btn_buscarCertificado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_buscarCertificado.Location = new System.Drawing.Point(1119, 354);
+            this.btn_buscarCertificado.Name = "btn_buscarCertificado";
+            this.btn_buscarCertificado.Size = new System.Drawing.Size(27, 21);
+            this.btn_buscarCertificado.TabIndex = 14;
+            this.btn_buscarCertificado.Text = "...";
+            this.btn_buscarCertificado.UseVisualStyleBackColor = true;
+            this.btn_buscarCertificado.Click += new System.EventHandler(this.btn_buscarCertificado_Click);
             // 
             // F_RegistrarAtividade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Projeto.Properties.Resources.Registro_de_Atividades;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1213, 564);
+            this.Controls.Add(this.btn_buscarCertificado);
+            this.Controls.Add(this.tbx_buscaCertificado);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_novaAtividade);
             this.Controls.Add(this.btn_fechar);
             this.Controls.Add(this.btn_salvar);
@@ -264,5 +299,8 @@
         private System.Windows.Forms.Button btn_fechar;
         private System.Windows.Forms.Button btn_novaAtividade;
         private System.Windows.Forms.Button btn_salvar;
+        private System.Windows.Forms.TextBox tbx_buscaCertificado;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_buscarCertificado;
     }
 }

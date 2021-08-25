@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -43,7 +44,8 @@ namespace Projeto
             tb_data.Clear();
             tb_pontos.Clear();
             tb_tipoAtividade.Clear();
-            tb_descricao.Clear();           
+            tb_descricao.Clear();
+            tbx_buscaCertificado.Clear();
         }
 
         private void btn_fechar_Click(object sender, EventArgs e)
@@ -56,7 +58,7 @@ namespace Projeto
             Atividade atividade = new Atividade();
             
 
-            if (tb_matricula.Text == "" || tb_nomeAtividade.Text == "" || tb_data.Text == "" || tb_pontos.Text == "" || tb_tipoAtividade.Text == "")
+            if (tb_matricula.Text == "" || tb_nomeAtividade.Text == "" || tb_data.Text == "" || tb_pontos.Text == "" || tb_tipoAtividade.Text == "" || tb_descricao.Text == "")
             {
                 MessageBox.Show("Alguns campos não foram preenchidos!");
                 return;
@@ -64,24 +66,44 @@ namespace Projeto
 
             else
             {
-                atividade.n_matricula = int.Parse(tb_matricula.Text);
-                atividade.t_nomeAtividade = tb_nomeAtividade.Text;
-                atividade.n_data = tb_data.Text;
-                atividade.n_pontosObtidos = int.Parse(tb_pontos.Text);
-                atividade.t_tipoAtividade = tb_tipoAtividade.Text;
-                atividade.t_descricao = tb_descricao.Text;
+                if (tbx_buscaCertificado.Text == "")
+                {
+                    atividade.n_matricula = int.Parse(tb_matricula.Text);
+                    atividade.t_nomeAtividade = tb_nomeAtividade.Text;
+                    atividade.n_data = tb_data.Text;
+                    atividade.n_pontosObtidos = int.Parse(tb_pontos.Text);
+                    atividade.t_tipoAtividade = tb_tipoAtividade.Text;
+                    atividade.t_descricao = tb_descricao.Text;
+                    Banco.NovaAtividadeSemCertificado(atividade);
+                }
 
-                Banco.NovaAtividade(atividade);
+                else
+                {
+                    atividade.n_matricula = int.Parse(tb_matricula.Text);
+                    atividade.t_nomeAtividade = tb_nomeAtividade.Text;
+                    atividade.n_data = tb_data.Text;
+                    atividade.n_pontosObtidos = int.Parse(tb_pontos.Text);
+                    atividade.t_tipoAtividade = tb_tipoAtividade.Text;
+                    atividade.t_descricao = tb_descricao.Text;
+                    atividade.t_nomeCertificado = tbx_buscaCertificado.Text;
+                    atividade.a_pdf = tbx_buscaCertificado.Text;
+                    Banco.NovaAtividadeComCertificado(atividade);
+                
+                }   
             }
+        }
 
-            string queryPontos = String.Format(@"
-                UPDATE
-                    tb_aluno
-                SET
-                    n_pontos = (n_pontos + '{0}')
-                WHERE
-                    n_matricula = {1}", tb_pontos.Text, tb_matricula.Text);
-            Banco.dml(queryPontos);
+        private void btn_buscarCertificado_Click(object sender, EventArgs e)
+        {
+            var retorno = string.Empty;
+            OpenFileDialog pdf = new OpenFileDialog();
+            pdf.Filter = "pdf(*.pdf)|*.pdf";
+
+            if (pdf.ShowDialog() == DialogResult.OK)
+            {
+                retorno = pdf.FileName;
+                tbx_buscaCertificado.Text = pdf.FileName;
+            }
         }
     }
 }

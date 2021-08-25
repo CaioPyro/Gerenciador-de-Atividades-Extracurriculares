@@ -14,5 +14,7 @@ namespace Projeto
         public string t_tipoAtividade;
         public string t_descricao;
         public Int32 id_atividade;
+        public string t_nomeCertificado;
+        public string a_pdf;
     }
 }

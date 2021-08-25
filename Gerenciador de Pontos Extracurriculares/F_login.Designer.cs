@@ -94,7 +94,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Projeto.Properties.Resources.login;
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.btn_logar);
             this.Controls.Add(this.tb_cpf);

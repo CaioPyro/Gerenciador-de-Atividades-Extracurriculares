@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Projeto.Properties.Resources.Background1;
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_dadosPessoais);
@@ -123,7 +123,7 @@
             this.Name = "F_MenuAluno";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gerenciador de Pontos Extracurriculares";
+            this.Text = "Gerenciador de Atividades Complementares";
             this.TransparencyKey = System.Drawing.Color.Black;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.F_MenuAluno_FormClosed);

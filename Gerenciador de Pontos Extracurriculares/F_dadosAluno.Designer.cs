@@ -40,6 +40,9 @@
             this.tb_cpf = new System.Windows.Forms.TextBox();
             this.tb_curso = new System.Windows.Forms.TextBox();
             this.tb_acesso = new System.Windows.Forms.TextBox();
+            this.foto = new System.Windows.Forms.PictureBox();
+            this.btn_alterarImagem = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -47,7 +50,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(126, 421);
+            this.label5.Location = new System.Drawing.Point(156, 417);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 15);
             this.label5.TabIndex = 30;
@@ -58,7 +61,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(177, 369);
+            this.label4.Location = new System.Drawing.Point(207, 365);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 27;
@@ -69,7 +72,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(186, 319);
+            this.label3.Location = new System.Drawing.Point(216, 315);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 15);
             this.label3.TabIndex = 25;
@@ -80,7 +83,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(158, 266);
+            this.label2.Location = new System.Drawing.Point(188, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 23;
@@ -91,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 210);
+            this.label1.Location = new System.Drawing.Point(205, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 21;
@@ -117,7 +120,7 @@
             // tb_nome
             // 
             this.tb_nome.Cursor = System.Windows.Forms.Cursors.No;
-            this.tb_nome.Location = new System.Drawing.Point(224, 209);
+            this.tb_nome.Location = new System.Drawing.Point(254, 205);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.ReadOnly = true;
             this.tb_nome.Size = new System.Drawing.Size(325, 20);
@@ -127,7 +130,7 @@
             // tb_matricula
             // 
             this.tb_matricula.Cursor = System.Windows.Forms.Cursors.No;
-            this.tb_matricula.Location = new System.Drawing.Point(224, 265);
+            this.tb_matricula.Location = new System.Drawing.Point(254, 261);
             this.tb_matricula.Name = "tb_matricula";
             this.tb_matricula.ReadOnly = true;
             this.tb_matricula.Size = new System.Drawing.Size(158, 20);
@@ -137,7 +140,7 @@
             // tb_cpf
             // 
             this.tb_cpf.Cursor = System.Windows.Forms.Cursors.No;
-            this.tb_cpf.Location = new System.Drawing.Point(224, 318);
+            this.tb_cpf.Location = new System.Drawing.Point(254, 314);
             this.tb_cpf.Name = "tb_cpf";
             this.tb_cpf.ReadOnly = true;
             this.tb_cpf.Size = new System.Drawing.Size(158, 20);
@@ -147,7 +150,7 @@
             // tb_curso
             // 
             this.tb_curso.Cursor = System.Windows.Forms.Cursors.No;
-            this.tb_curso.Location = new System.Drawing.Point(224, 368);
+            this.tb_curso.Location = new System.Drawing.Point(254, 364);
             this.tb_curso.Name = "tb_curso";
             this.tb_curso.ReadOnly = true;
             this.tb_curso.Size = new System.Drawing.Size(158, 20);
@@ -157,21 +160,51 @@
             // tb_acesso
             // 
             this.tb_acesso.Cursor = System.Windows.Forms.Cursors.No;
-            this.tb_acesso.Location = new System.Drawing.Point(224, 420);
+            this.tb_acesso.Location = new System.Drawing.Point(254, 416);
             this.tb_acesso.Name = "tb_acesso";
             this.tb_acesso.ReadOnly = true;
             this.tb_acesso.Size = new System.Drawing.Size(158, 20);
             this.tb_acesso.TabIndex = 0;
             this.tb_acesso.TabStop = false;
             // 
+            // foto
+            // 
+            this.foto.BackColor = System.Drawing.Color.DarkRed;
+            this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.foto.Location = new System.Drawing.Point(807, 206);
+            this.foto.Name = "foto";
+            this.foto.Size = new System.Drawing.Size(110, 130);
+            this.foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.foto.TabIndex = 32;
+            this.foto.TabStop = false;
+            // 
+            // btn_alterarImagem
+            // 
+            this.btn_alterarImagem.BackColor = System.Drawing.Color.DarkRed;
+            this.btn_alterarImagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_alterarImagem.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.btn_alterarImagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btn_alterarImagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.btn_alterarImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_alterarImagem.ForeColor = System.Drawing.Color.White;
+            this.btn_alterarImagem.Location = new System.Drawing.Point(816, 343);
+            this.btn_alterarImagem.Name = "btn_alterarImagem";
+            this.btn_alterarImagem.Size = new System.Drawing.Size(94, 25);
+            this.btn_alterarImagem.TabIndex = 33;
+            this.btn_alterarImagem.Text = "Alterar imagem";
+            this.btn_alterarImagem.UseVisualStyleBackColor = false;
+            this.btn_alterarImagem.Click += new System.EventHandler(this.btn_alterarImagem_Click);
+            // 
             // F_dadosAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Projeto.Properties.Resources.dados_pessoais;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1139, 598);
+            this.Controls.Add(this.btn_alterarImagem);
+            this.Controls.Add(this.foto);
             this.Controls.Add(this.btn_fechar);
             this.Controls.Add(this.tb_acesso);
             this.Controls.Add(this.tb_curso);
@@ -189,8 +222,9 @@
             this.MinimizeBox = false;
             this.Name = "F_dadosAluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "F_dadosAluno";
+            this.Text = "Dados Pessoais";
             this.Load += new System.EventHandler(this.F_dadosAluno_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.foto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +243,7 @@
         private System.Windows.Forms.TextBox tb_cpf;
         private System.Windows.Forms.TextBox tb_curso;
         private System.Windows.Forms.TextBox tb_acesso;
+        private System.Windows.Forms.PictureBox foto;
+        private System.Windows.Forms.Button btn_alterarImagem;
     }
 }

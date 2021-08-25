@@ -7,11 +7,13 @@ namespace Projeto
 {
     class Aluno
     {
-        public Int32 n_matricula;
+        public Int64 n_matricula;
+        public Int64 n_matricula1;
         public string t_nome;
-        public Int32 n_cpf;
+        public Int64 n_cpf;
         public string t_curso;
         public string t_acesso;
-        public Int32 n_pontos;
+        public Int64 n_pontos;
+        public byte[] a_foto;
     }
 }

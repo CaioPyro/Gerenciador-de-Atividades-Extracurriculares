@@ -39,7 +39,10 @@ namespace Projeto
             dgv_atividade.Columns[1].Width = 112;
             dgv_atividade.Columns[2].Width = 112;
 
-            tb_pontos.Text = Banco.consulta(queryConsultarPontosTotais).Rows[0].Field<Int64>("n_pontos").ToString();
+            string max = "/153";
+            string pontos = Banco.consulta(queryConsultarPontosTotais).Rows[0].Field<Int64>("n_pontos").ToString();
+            max = pontos + max;
+            tb_pontos.Text = max;
         }
 
         private void btn_fechar_Click(object sender, EventArgs e)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.IO;
 
 namespace Projeto
 {
@@ -37,8 +38,30 @@ namespace Projeto
             tb_curso.Text = Banco.consulta(queryConsultarDadosAluno).Rows[0].Field<string>("t_curso").ToString();
             tb_acesso.Text = Banco.consulta(queryConsultarDadosAluno).Rows[0].Field<string>("t_acesso").ToString();
 
+            DataTable dt = new DataTable();
+            dt = Banco.ObterDadosAlunos(tb_matricula.Text);
+            byte[] img = (byte[])dt.Rows[0][6];
+            MemoryStream ms = new MemoryStream(img);
+            foto.Image = Image.FromStream(ms);
         }
 
+        private void btn_alterarImagem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog png = new OpenFileDialog();
+            png.Filter = "png(*.png)|*.png";
 
+            if (png.ShowDialog() == DialogResult.OK)
+            {
+                Image image;
+                image = Image.FromFile(png.FileName);
+                foto.Image = image;
+
+                ImageConverter converter = new ImageConverter();
+                Aluno aluno = new Aluno();
+                aluno.a_foto = (byte[])converter.ConvertTo(image, typeof(byte[]));
+                aluno.n_matricula = int.Parse(tb_matricula.Text);
+                Banco.alterarImagem(aluno);
+            }
+        }
     }
 }

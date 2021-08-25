@@ -57,6 +57,9 @@
     <Reference Include="System.Data.SQLite.Linq, Version=1.0.114.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.114.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -184,6 +187,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -199,6 +203,36 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastro aluno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos Cadastrados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atividades cadastradas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atividades realizadas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dados pessoais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edição de atividade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pontos obtidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registro de Atividades.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -35,20 +35,29 @@ namespace Projeto
 
         public void btn_pesquisar_Click(object sender, EventArgs e)
         {
-            Atividade A = new Atividade();
-            A.n_matricula = int.Parse(tb_matricula.Text);
-            dgv_atividade.DataSource = Banco.consultaAtiv(A);
-            dgv_atividade.Columns[0].Width = 75;
-            dgv_atividade.Columns[1].Width = 75;
-            dgv_atividade.Columns[2].Width = 130;
-            dgv_atividade.Columns[3].Width = 75;
-            dgv_atividade.Columns[4].Width = 55;
-            dgv_atividade.Columns[5].Width = 95;
-            dgv_atividade.Columns[6].Width = 140;
-
-            if (dgv_atividade.Rows.Count == 0)
+            if (tb_matricula.Text == "")
             {
-                MessageBox.Show("Nenhuma atividade foi encontrada");
+                MessageBox.Show("Digite a matrícula do aluno!");
+            }
+
+            else
+            {
+                Atividade A = new Atividade();
+                A.n_matricula = int.Parse(tb_matricula.Text);
+                dgv_atividade.DataSource = Banco.consultaAtiv(A);
+                dgv_atividade.Columns[0].Width = 75;
+                dgv_atividade.Columns[1].Width = 75;
+                dgv_atividade.Columns[2].Width = 130;
+                dgv_atividade.Columns[3].Width = 75;
+                dgv_atividade.Columns[4].Width = 55;
+                dgv_atividade.Columns[5].Width = 95;
+                dgv_atividade.Columns[6].Width = 95;
+                dgv_atividade.Columns[7].Width = 75;
+
+                if (dgv_atividade.Rows.Count == 0)
+                {
+                    MessageBox.Show("Nenhuma atividade foi encontrada");
+                }
             }
         }
 
@@ -62,7 +71,8 @@ namespace Projeto
             dgv_atividade.Columns[3].Width = 75;
             dgv_atividade.Columns[4].Width = 55;
             dgv_atividade.Columns[5].Width = 95;
-            dgv_atividade.Columns[6].Width = 140;
+            dgv_atividade.Columns[6].Width = 95;
+            dgv_atividade.Columns[7].Width = 75;
         }
 
         private void dgv_atividade_SelectionChanged(object sender, EventArgs e)
