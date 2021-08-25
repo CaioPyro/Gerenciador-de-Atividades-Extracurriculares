@@ -25,3 +25,34 @@ C:\Users\Caio Eduardo\Documents\Visual Studio 2010\Projects\Gerenciador de Ponto
 C:\Users\Caio Eduardo\Documents\Visual Studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csprojAssemblyReference.cache
 C:\Users\Caio Eduardo\Documents\Visual Studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csproj.CoreCompileInputs.cache
 C:\Users\Caio Eduardo\Documents\Visual Studio 2010\Projects\Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csproj.CopyComplete
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\Gerenciador de Pontos Extracurriculares.exe.config
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\Gerenciador de Pontos Extracurriculares.exe
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\Gerenciador de Pontos Extracurriculares.pdb
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\EntityFramework.dll
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\System.Data.SQLite.dll
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\EntityFramework.xml
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\System.Data.SQLite.xml
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csproj.AssemblyReference.cache
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.Menu_Coordenador.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_cadastroAluno.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_consultarAluno.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_ConsultarAtividades.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_ConsultarAtividadesAluno.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_dadosAluno.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_EditarAtividade.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_login.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_MenuAluno.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_Pontos.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.F_RegistrarAtividade.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Projeto.Properties.Resources.resources
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csproj.GenerateResource.cache
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csproj.CoreCompileInputs.cache
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.csproj.CopyComplete
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.exe
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\obj\x86\Debug\Gerenciador de Pontos Extracurriculares.pdb
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\System.ValueTuple.dll
+C:\Users\caioe\Documents\Gerenciador-de-Pontos-Extracurriculares-master\Gerenciador de Pontos Extracurriculares\bin\Debug\System.ValueTuple.xml
