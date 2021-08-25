@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador de Pontos Extracurriculares", "Gerenciador de Pontos Extracurriculares\Gerenciador de Pontos Extracurriculares.csproj", "{B80DA9B0-8162-445D-AD54-8A1BB89F4CFC}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Instalador\Instalador\Instalador.vdproj", "{F71A6A6C-E6BC-4ECD-ABFD-F19B551CE570}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Gerenciador de Pontos Extracurriculares\Instalador\Instalador.vdproj", "{05119FE7-FF02-4349-8A4E-04E4368F665D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		{B80DA9B0-8162-445D-AD54-8A1BB89F4CFC}.Release|Any CPU.ActiveCfg = Release|x86
 		{B80DA9B0-8162-445D-AD54-8A1BB89F4CFC}.Release|x86.ActiveCfg = Release|x86
 		{B80DA9B0-8162-445D-AD54-8A1BB89F4CFC}.Release|x86.Build.0 = Release|x86
-		{F71A6A6C-E6BC-4ECD-ABFD-F19B551CE570}.Debug|Any CPU.ActiveCfg = Debug
-		{F71A6A6C-E6BC-4ECD-ABFD-F19B551CE570}.Debug|x86.ActiveCfg = Debug
-		{F71A6A6C-E6BC-4ECD-ABFD-F19B551CE570}.Release|Any CPU.ActiveCfg = Release
-		{F71A6A6C-E6BC-4ECD-ABFD-F19B551CE570}.Release|x86.ActiveCfg = Release
+		{05119FE7-FF02-4349-8A4E-04E4368F665D}.Debug|Any CPU.ActiveCfg = Debug
+		{05119FE7-FF02-4349-8A4E-04E4368F665D}.Debug|x86.ActiveCfg = Debug
+		{05119FE7-FF02-4349-8A4E-04E4368F665D}.Release|Any CPU.ActiveCfg = Release
+		{05119FE7-FF02-4349-8A4E-04E4368F665D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
